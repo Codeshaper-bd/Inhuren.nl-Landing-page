@@ -1,667 +1,549 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inhuren.nl-Landing-page</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
 
-    <style>
-      body {
-        font-family: "DM Sans", sans-serif;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inhuren.nl-Landing-page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="Assets/css/style.css" />
+</head>
 
-      .clip-image {
-        clip-path: ellipse(50% 45% at center center);
-        border-radius: 15px;
-        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
-      }
-    </style>
-  </head>
-  <body class="">
-    <header class="">
-      <div
-        class="container mx-auto px-5 flex justify-between items-center py-4"
-      >
-        <!-- Logo -->
+<body class="">
+  <header class="py-3 h-16">
+    <div class="px-5 container mx-auto flex justify-between items-center ">
+      <!-- Logo -->
+      <div class="h-8 w-[125px] flex-none">
         <a href="#">
-          <img
-            src="images/Logo +Actions.png"
-            alt="Logo"
-            class="w-full h-full object-none"
-          />
+          <img src="images/Logo +Actions.png" alt="Logo" class="w-full h-full" />
         </a>
-
-        <!-- Buttons (Hidden on small screens, visible on medium and larger) -->
-        <div class="hidden md:flex gap-4">
-          <button
-            class="bg-[#EFF0E4] text-[#135243] px-6 py-3 rounded-[8px] shadow-md border-none hover:bg-[#e4fff0] hover:text-black transition duration-300 ease-in-out font-medium text-sm"
-          >
-            Login
-          </button>
-          <button
-            class="bg-[#DDFE52] text-[#135243] px-6 py-3 rounded-xl shadow-md border-none hover:bg-lime-400 hover:text-white transition duration-300 ease-in-out font-medium text-sm"
-          >
-            Sign Up
-          </button>
-        </div>
-
-        <!-- Mobile Menu Button -->
-        <div class="md:hidden">
-          <button id="menu-toggle" class="text-[#135243] focus:outline-none">
-            <i class="fa-solid fa-bars text-2xl"></i>
-          </button>
-        </div>
       </div>
 
-      <!-- Mobile Dropdown Menu -->
-      <div
-        id="mobile-menu"
-        class="hidden md:hidden flex flex-col items-center gap-4 py-4 bg-white shadow-md"
-      >
+      <!-- Buttons (Hidden on small screens, visible on medium and larger) -->
+      <div class="flex-1 justify-end hidden md:flex gap-4">
         <button
-          class="px-6 py-2 bg-[#EFF0E4] text-[#135243] font-medium text-sm rounded-lg w-4/5 hover:bg-[#e4fff0] hover:text-black transition duration-300 ease-in-out"
-        >
+          class="bg-[#EFF0E4] text-[#135243] px-6 py-3 rounded-[8px] shadow-md border-none hover:bg-[#e4fff0] hover:text-black transition duration-300 ease-in-out font-medium text-sm">
           Login
         </button>
         <button
-          class="px-6 py-2 bg-[#DDFE52] text-[#135243] font-medium text-sm rounded-lg w-4/5 hover:bg-lime-400 hover:text-white transition duration-300 ease-in-out"
-        >
+          class="bg-[#DDFE52] text-[#135243] px-6 py-3 rounded-xl shadow-md border-none hover:bg-lime-400 hover:text-white transition duration-300 ease-in-out font-medium text-sm">
           Sign Up
         </button>
       </div>
 
-      <script>
-        document
-          .getElementById("menu-toggle")
-          .addEventListener("click", function () {
-            document.getElementById("mobile-menu").classList.toggle("hidden");
-          });
-      </script>
-    </header>
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden">
+        <button id="menu-toggle" class="text-[#135243] focus:outline-none">
+          <i class="fa-solid fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </div>
 
-    <main>
-      <section class="py-12">
-        <div class="container mx-auto px-5">
-          <div
-            class="flex flex-col lg:flex-row justify-between items-center gap-4"
-          >
-            <!-- Left side (text content) -->
-            <div class="w-full lg:w-1/3 mb-6 md:mb-0">
-              <h1
-                class="text-2xl md:text-4xl lg:text-5xl font-bold text-[#333333] mb-6"
-              >
-                Hire the best experts for your business
-              </h1>
-              <ul class="space-y-4 text-xl">
-                <li
-                  class="flex items-center text-[#333333] gap-4 text-[22px] font-medium"
-                >
-                  <i class="fa-solid fa-circle-check text-[#135243]"></i>
-                  Discover opportunities aligned with your skills and
-                  aspirations
-                </li>
-                <li
-                  class="flex items-center text-[#333333] gap-4 text-[22px] font-medium"
-                >
-                  <i class="fa-solid fa-circle-check text-[#135243]"></i> Unlock
-                  access to competitive pay, benefits, and skill development
-                </li>
-                <li
-                  class="flex items-center text-[#333333] gap-4 text-[22px] font-medium"
-                >
-                  <i class="fa-solid fa-circle-check text-[#135243]"></i>
-                  Explore roles across various companies and work arrangements
-                </li>
-                <li
-                  class="flex items-center text-[#333333] gap-4 text-[22px] font-medium"
-                >
-                  <i class="fa-solid fa-circle-check text-[#135243]"></i>
-                  Discover opportunities aligned with your skills and
-                  aspirations
-                </li>
-                <li
-                  class="flex items-center text-[#333333] gap-4 text-[22px] font-medium"
-                >
-                  <i class="fa-solid fa-circle-check text-[#135243]"></i>
-                  Explore roles across various companies and work arrangements
-                </li>
-              </ul>
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu"
+      class="hidden md:hidden flex flex-col items-center gap-3 py-4 bg-white shadow-md relative z-20">
+      <button
+        class="px-6 py-2 bg-[#EFF0E4] text-[#135243] font-medium text-sm rounded-lg w-4/5 hover:bg-[#e4fff0] hover:text-black transition duration-300 ease-in-out">
+        Login
+      </button>
+      <button
+        class="px-6 py-2 bg-[#DDFE52] text-[#135243] font-medium text-sm rounded-lg w-4/5 hover:bg-lime-400 hover:text-white transition duration-300 ease-in-out">
+        Sign Up
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="py-12">
+      <div class="container mx-auto px-5">
+        <div class="grid grid-cols-12 items-start gap-4">
+          <!-- Left side (text content) -->
+          <div class="col-span-12 lg:col-span-5 xl:col-span-4">
+            <h1
+              class="text-3xl/[120%] md:text-4xl/[120%] lg:text-5xl/[120%]  font-bold text-[#333333] mb-6 tracking-(-2%)">
+              Hire the best experts for your business
+            </h1>
+            <ul class="space-y-4">
+              <li class="flex items-start  gap-4 ">
+                <i class="fa-solid fa-circle-check text-[#135243] text-2xl md:text-[32px] mt-1"></i>
+                <span class=" text-lg xl:text-[22px]/8 font-medium text-[#333333]">Discover opportunities aligned with
+                  your skills
+                  and
+                  aspirations</span>
+              </li>
+              <li class="flex items-start  gap-4 ">
+                <i class="fa-solid fa-circle-check text-[#135243] text-2xl md:text-[32px] mt-1"></i>
+                <span class=" text-lg xl:text-[22px]/8 font-medium text-[#333333]">Unlock access to competitive pay,
+                  benefits, and
+                  skill
+                  development</span>
+              </li>
+              <li class="flex items-start  gap-4 ">
+                <i class="fa-solid fa-circle-check text-[#135243] text-2xl md:text-[32px] mt-1"></i>
+                <span class=" text-lg xl:text-[22px]/8 font-medium text-[#333333]">Explore roles across various
+                  companies and work
+                  arrangements</span>
+
+              </li>
+              <li class="flex items-start  gap-4 ">
+                <i class="fa-solid fa-circle-check text-[#135243] text-2xl md:text-[32px] mt-1"></i>
+                <span class=" text-lg xl:text-[22px]/8 font-medium text-[#333333]">Discover opportunities aligned with
+                  your skills
+                  and
+                  aspirations</span>
+
+              </li>
+              <li class="flex items-start  gap-4 ">
+                <i class="fa-solid fa-circle-check text-[#135243] text-2xl md:text-[32px] mt-1"></i>
+                <span class=" text-lg xl:text-[22px]/8 font-medium text-[#333333]">Explore roles across various
+                  companies and work
+                  arrangements</span>
+
+              </li>
+            </ul>
+          </div>
+
+          <!-- Right side (image) -->
+          <div class="col-span-12 lg:col-span-7 xl:col-span-8">
+            <div class="w-full">
+              <img src="images/1 1244081.png" class="w-full h-full object-contain" />
             </div>
+          </div>
 
-            <!-- Right side (image) -->
-            <div class="w-full lg:w-2/3">
-              <img
-                src="images/1 1244081.png"
-                class="w-full h-full object-cover"
-              />
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-12 pb-24 bg-white text-[#333333]">
+      <div class="container mx-auto text-center px-5">
+        <!-- Heading -->
+        <h2 class="text-3x/[140%]l md:text-4xl/[140%] lg:text-5xl/[140%] font-bold text-[#333333] max-w-4xl mx-auto mt-4 md:mt-6 tracking-(-2%)">
+          Find the best experts in Netherlands with Inhuren.nl
+        </h2>
+        <p class="text-black max-w-2xl text-xl font-normal mt-3 md:mt-5 mx-auto">
+          Find skilled candidates, in-demand jobs, and the solutions you need
+          to help you do your best work yet.
+        </p>
+
+        <!-- Experts Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-12">
+          <!-- Expert Card -->
+          <div class="bg-white shadow-lg rounded-[10px] overflow-hidden">
+            <div class="h-48 w-full">
+              <img src="images/Rectangle 99.png" alt="Emily Dubow" class="w-full h-full object-cover" />
+            </div>
+            <div class="p-4 flex flex-col gap-4 pt-3.5 pb-10">
+              <h3 class="text-2xl font-semibold flex items-center gap-2 text-[#135243]">
+                Emily Dubow
+              </h3>
+              <p class="text-lg  flex items-center gap-3">
+                <span class="h-[22px] w-[22px]">
+                  <img src="images/Vector.png" alt="" class="h-full w-full" />
+                </span>
+                <span class="text-[#333333]">
+                  <span class="text-[#135243] font-semibold">Verified Expert</span> in Finance
+                </span>
+              </p>
+              <p class="text-[#727272] flex items-center gap-2 text-base font-normal">
+                <img src="images/Vector.svg" alt="" />Finance Expert
+              </p>
+            </div>
+          </div>
+
+          <!-- Expert Card -->
+          <div class="bg-white shadow-lg rounded-[10px] overflow-hidden">
+            <div class="w-full h-48">
+              <img src="images/Rectangle 99 (1).png" alt="Anna James" class="w-full h-full object-cover" />
+            </div>
+            <div class="p-4 flex flex-col gap-4 pt-3.5 pb-10">
+              <h3 class="text-2xl font-semibold flex items-center gap-2 text-[#135243]">
+                Johan Elbaz
+              </h3>
+              <p class="text-lg  flex items-center gap-3">
+                <span class="h-[22px] w-[22px]">
+                  <img src="images/Vector.png" alt="" class="h-full w-full" />
+                </span>
+                <span class="text-[#333333]">
+                  <span class="text-[#135243] font-semibold">Verified Expert</span> in Design
+                </span>
+              </p>
+              <p class="text-[#727272] flex items-center gap-2 text-base font-normal">
+                <img src="images/Vector.svg" alt="" />UI UX Designer
+              </p>
+            </div>
+          </div>
+
+          <!-- Expert Card -->
+          <div class="bg-white shadow-lg rounded-[10px] overflow-hidden">
+            <div class="w-full h-48">
+              <img src="images/Rectangle 99 (2).png" alt="Anna James" class="w-full h-48 object-cover" />
+            </div>
+            <div class="p-4 flex flex-col gap-4 pt-3.5 pb-10">
+              <h3 class="text-2xl font-semibold flex items-center gap-2 text-[#135243]">
+                Anna James
+              </h3>
+              <p class="text-lg  flex items-center gap-3">
+                <span class="h-[22px] w-[22px]">
+                  <img src="images/Vector.png" alt="" class="h-full w-full" />
+                </span>
+                <span class="text-[#333333]">
+                  <span class="text-[#135243] font-semibold">Verified Expert</span> in Finance
+                </span>
+              </p>
+              <p class="text-[#727272] flex items-center gap-2 text-base font-normal">
+                <img src="images/Vector.svg" alt="" />Finance Expert
+              </p>
+            </div>
+          </div>
+
+          <!-- Expert Card -->
+          <div class="bg-white shadow-lg rounded-[10px] overflow-hidden">
+            <div class="w-full h-48">
+              <img src="images/Rectangle 99 (3).png" alt="Anna James" class="w-full h-48 object-cover" />
+            </div>
+            <div class="p-4 flex flex-col gap-4 pt-3.5 pb-10">
+              <h3 class="text-2xl font-semibold flex items-center gap-2 text-[#135243]">
+                Johan Elbaz
+              </h3>
+              <p class="text-lg  flex items-center gap-3">
+                <span class="h-[22px] w-[22px]">
+                  <img src="images/Vector.png" alt="" class="h-full w-full" />
+                </span>
+                <span class="text-[#333333]">
+                  <span class="text-[#135243] font-semibold">Verified Expert</span> in Finance
+                </span>
+              </p>
+              <p class="text-[#727272] flex items-center gap-2 text-base font-normal">
+                <img src="images/Vector.svg" alt="" />Finance Expert
+              </p>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="py-12 bg-white text-[#333333]">
-        <div class="container mx-auto text-center px-5">
-          <!-- Heading -->
-          <h2
-            class="text-3xl md:text-4xl lg:text-5xl font-bold text-[#333333] max-w-4xl mx-auto mt-4 md:mt-6"
-          >
-            Find the best experts in Netherlands with Inhuren.nl
-          </h2>
-          <p
-            class="text-black max-w-2xl text-xl font-normal mt-3 md:mt-5 mx-auto"
-          >
-            Find skilled candidates, in-demand jobs, and the solutions you need
-            to help you do your best work yet.
-          </p>
+    <section class="py-24 bg-[#EFF0E480]">
+      <div class="container mx-auto text-center px-5">
+        <!-- Heading -->
+        <h2 class="text-3x/[140%]l md:text-4xl/[140%] lg:text-5xl/[140%] font-bold text-[#333333] max-w-4xl mx-auto mt-4 md:mt-6 tracking-(-2%)">
+          Hire the Experts in 4 Steps
+        </h2>
+        <p class="text-black max-w-2xl text-lg md:text-xl font-normal mt-3 mx-auto">
+          Simplify your hiring process with just four easy steps. Find,
+          connect, and hire the right experts.
+        </p>
 
-          <!-- Experts Grid -->
-          <div
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-12"
-          >
-            <!-- Expert Card -->
-            <div class="bg-white shadow-lg rounded-[10px] overflow-hidden">
-              <div class="h-48 w-full">
-                <img
-                  src="images/Rectangle 99.png"
-                  alt="Emily Dubow"
-                  class="w-full h-full object-cover"
-                />
+        <!-- Steps Section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-12 gap-3">
+          <!-- Step 1 -->
+          <div class="flex flex-col md:flex-row items-center text-center gap-2">
+            <div class="flex flex-col items-center text-center">
+              <div
+                class="h-20 md:h-28 w-20 md:w-28 bg-[#135243] p-4 text-white flex items-center justify-center rounded-full">
+                <img src="images/Vector (3).svg" alt="" class="w-7 md:w-12 h-7 md:h-12" />
               </div>
-              <div class="p-4 flex flex-col gap-4 px-4 pb-10">
-                <h3
-                  class="text-2xl font-semibold flex items-center gap-2 text-[#135243]"
-                >
-                  Emily Dubow
-                </h3>
-                <p class="text-lg font-semibold flex items-center gap-2">
-                  <img src="images/Vector.png" alt="" class="object-none" />
-                  <span class="text-[#135243]">Verified Expert</span> in Finance
-                </p>
-                <p
-                  class="text-gray-500 flex items-center gap-2 text-base font-normal"
-                >
-                  <img src="images/Vector.svg" alt="" />Finance Expert
-                </p>
-              </div>
-            </div>
-
-            <!-- Expert Card -->
-            <div class="bg-white shadow-lg rounded-[10px] overflow-hidden">
-              <div class="w-full h-48">
-                <img
-                  src="images/Rectangle 99 (1).png"
-                  alt="Anna James"
-                  class="w-full h-full object-cover"
-                />
-              </div>
-              <div class="p-4 flex flex-col gap-4 px-4 pb-10">
-                <h3
-                  class="text-2xl font-semibold flex items-center gap-2 text-[#135243]"
-                >
-                  Johan Elbaz
-                </h3>
-                <p class="text-lg font-semibold flex items-center gap-2">
-                  <img src="images/Vector.png" alt="" class="object-none" />
-                  <span class="text-[#135243]">Verified Expert</span> in Design
-                </p>
-                <p
-                  class="text-gray-500 flex items-center gap-2 text-base font-normal"
-                >
-                  <img src="images/Vector.svg" alt="" />UI UX Designer
-                </p>
-              </div>
-            </div>
-
-            <!-- Expert Card -->
-            <div class="bg-white shadow-lg rounded-[10px] overflow-hidden">
-              <div class="w-full h-48">
-                <img
-                  src="images/Rectangle 99 (2).png"
-                  alt="Anna James"
-                  class="w-full h-48 object-cover"
-                />
-              </div>
-              <div class="p-4 flex flex-col gap-4 px-4 pb-10">
-                <h3
-                  class="text-2xl font-semibold flex items-center gap-2 text-[#135243]"
-                >
-                  Anna James
-                </h3>
-                <p class="text-lg font-semibold flex items-center gap-2">
-                  <img src="images/Vector.png" alt="" class="object-none" />
-                  <span class="text-[#135243]">Verified Expert</span> in Finance
-                </p>
-                <p
-                  class="text-gray-500 flex items-center gap-2 text-base font-normal"
-                >
-                  <img src="images/Vector.svg" alt="" />Finance Expert
-                </p>
-              </div>
-            </div>
-
-            <!-- Expert Card -->
-            <div class="bg-white shadow-lg rounded-[10px] overflow-hidden">
-              <div class="w-full h-48">
-                <img
-                  src="images/Rectangle 99 (3).png"
-                  alt="Anna James"
-                  class="w-full h-48 object-cover"
-                />
-              </div>
-              <div class="p-4 flex flex-col gap-4 px-4 pb-10">
-                <h3
-                  class="text-2xl font-semibold flex items-center gap-2 text-[#135243]"
-                >
-                  Johan Elbaz
-                </h3>
-                <p class="text-lg font-semibold flex items-center gap-2">
-                  <img src="images/Vector.png" alt="" class="object-none" />
-                  <span class="text-[#135243]">Verified Expert</span> in Finance
-                </p>
-                <p
-                  class="text-gray-500 flex items-center gap-2 text-base font-normal"
-                >
-                  <img src="images/Vector.svg" alt="" />Finance Expert
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="py-12 bg-[#EFF0E480]">
-        <div class="container mx-auto text-center px-5">
-          <!-- Heading -->
-          <h2
-            class="text-3xl md:text-4xl lg:text-5xl font-bold text-[#333333] max-w-3xl mx-auto mb-4"
-          >
-            Hire the Experts in 4 Steps
-          </h2>
-          <p
-            class="text-black max-w-2xl text-lg md:text-xl font-normal mt-3 mx-auto"
-          >
-            Simplify your hiring process with just four easy steps. Find,
-            connect, and hire the right experts.
-          </p>
-
-          <!-- Steps Section -->
-          <div
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-8"
-          >
-            <!-- Step 1 -->
-            <div
-              class="flex flex-col md:flex-row items-center text-center gap-4"
-            >
-              <div class="flex flex-col items-center text-center">
-                <div
-                  class="w-16 h-16 bg-[#135243] p-4 text-white flex items-center justify-center rounded-full"
-                >
-                  <img src="images/Vector (3).svg" alt="" />
-                </div>
-                <h3 class="text-[22px] font-semibold text-[#135243] mt-4">
+              <div class="mt-7">
+                <h3 class="text-[22px] font-semibold text-[#135243]">
                   Place an order
                 </h3>
-                <p class="text-gray-600 text-sm mt-2">
+                <p class="text-[#333333] font-medium text-base mt-2">
                   Place your order for free and receive quotes within a few
                   hours.
                 </p>
               </div>
-              <div class="mt-8">
-                <img
-                  src="images/image 5.svg"
-                  alt=""
-                  class="w-full h-full object-cover"
-                />
-              </div>
             </div>
+            <div class="md:mt-20 h-10 w-10 md:w-16 rotate-90 md:rotate-0">
+              <img src="images/image 5.svg" alt="" class="w-full h-full object-cover" />
+            </div>
+          </div>
 
-            <!-- Step 2 -->
-            <div
-              class="flex flex-col md:flex-row items-center text-center gap-4"
-            >
-              <div class="flex flex-col items-center text-center">
-                <div
-                  class="w-16 h-16 bg-[#135243] p-4 text-white flex items-center justify-center rounded-full"
-                >
-                  <img src="images/Vector (1).svg" alt="" />
-                </div>
-                <h3 class="text-[22px] font-semibold text-[#135243] mt-4">
+          <!-- Step 2 -->
+          <div class="flex flex-col md:flex-row items-center text-center">
+            <div class="flex flex-col items-center text-center">
+              <div
+                class="h-20 md:h-28 w-20 md:w-28 bg-[#135243] p-4 text-white flex items-center justify-center rounded-full">
+                <img src="images/user.png" alt="" class="w-7 md:w-12 h-7 md:h-12" />
+              </div>
+              <div class="mt-7">
+                <h3 class="text-[22px] font-semibold text-[#135243]">
                   Hire an expert
                 </h3>
-                <p class="text-gray-600 text-sm mt-2">
+                <p class="text-[#333333] font-medium text-base mt-2">
                   Hand over your project to a talented expert in a few minutes.
                 </p>
               </div>
-              <div class="mt-8">
-                <img
-                  src="images/image 5.svg"
-                  alt=""
-                  class="w-full h-full object-cover"
-                />
-              </div>
-            </div>
 
-            <!-- Step 3 -->
-            <div
-              class="flex flex-col md:flex-row items-center text-center gap-4"
-            >
-              <div class="flex flex-col items-center text-center">
-                <div
-                  class="w-16 h-16 bg-[#135243] p-4 text-white flex items-center justify-center rounded-full"
-                >
-                  <img src="images/Vector (2).svg" alt="" />
-                </div>
-                <h3 class="text-[22px] font-semibold text-[#135243] mt-4">
+            </div>
+            <div class="md:mt-20 h-10 w-10 md:w-16 rotate-90 md:rotate-0">
+              <img src="images/image 5.svg" alt="" class="w-full h-full object-cover" />
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="flex flex-col md:flex-row items-center text-center">
+            <div class="flex flex-col items-center text-center">
+              <div
+                class="h-20 md:h-28 w-20 md:w-28 bg-[#135243] p-4 text-white flex items-center justify-center rounded-full">
+                <img src="images/Vector (2).svg" alt="" class="w-7 md:w-12 h-7 md:h-12" />
+              </div>
+              <div class="mt-7">
+                <h3 class="text-[22px] font-semibold text-[#135243] ">
                   Run command
                 </h3>
-                <p class="text-gray-600 text-sm mt-2">
+                <p class="text-[#333333] font-medium text-base mt-2">
                   Determine how and when you want the assignment to be carried
                   out.
                 </p>
               </div>
-              <div class="mt-8">
-                <img
-                  src="images/image 5.svg"
-                  alt=""
-                  class="w-full h-full object-cover"
-                />
-              </div>
-            </div>
 
-            <!-- Step 4 -->
-            <div class="flex flex-col items-center text-center">
-              <div
-                class="w-16 h-16 bg-[#135243] p-4 text-white flex items-center justify-center rounded-full"
-              >
-                <img src="images/Vector (3).svg" alt="" />
-              </div>
-              <h3 class="text-[22px] font-semibold text-[#135243] mt-4">
+            </div>
+            <div class="md:mt-20 h-10 w-10 md:w-16 rotate-90 md:rotate-0">
+              <img src="images/image 5.svg" alt="" class="w-full h-full object-cover" />
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="flex flex-col items-center text-center">
+            <div
+              class="h-20 md:h-28 w-20 md:w-28 bg-[#135243] p-4 text-white flex items-center justify-center rounded-full">
+              <img src="images/check.png" alt="" class="w-7 md:w-12 h-7 md:h-12" />
+            </div>
+            <div class="mt-7">
+              <h3 class="text-[22px] font-semibold text-[#135243] ">
                 Review the expert
               </h3>
-              <p class="text-gray-600 text-sm mt-2">
+              <p class="text-[#333333] font-medium text-base mt-2">
                 Let us know how the expert carried out the assignment.
               </p>
             </div>
+
           </div>
-        </div>
-      </section>
-
-      <section class="py-12">
-        <div class="container mx-auto px-5">
-          <div
-            class="flex flex-col lg:flex-row justify-between items-center gap-4"
-          >
-            <!-- Left side (text content) -->
-            <div class="w-full lg:w-1/2 mb-6 md:mb-0 flex flex-col gap-8">
-              <h1
-                class="text-2xl md:text-4xl lg:text-5xl font-bold text-[#333333]"
-              >
-                Start as an expert with Inhuren.nl
-              </h1>
-              <ul class="space-y-4 text-xl">
-                <li
-                  class="flex items-center text-[#333333] gap-4 text-[22px] font-medium"
-                >
-                  <i class="fa-solid fa-circle-check text-[#135243]"></i>
-                  Discover Opportunities Aligned with Your Skills and
-                  Aspirations
-                </li>
-                <li
-                  class="flex items-center text-[#333333] gap-4 text-[22px] font-medium"
-                >
-                  <i class="fa-solid fa-circle-check text-[#135243]"></i>
-                  Explore Roles Across Various Companies and Work Arrangements
-                </li>
-                <li
-                  class="flex items-center text-[#333333] gap-4 text-[22px] font-medium"
-                >
-                  <i class="fa-solid fa-circle-check text-[#135243]"></i>
-                  Unlock Access to Competitive Pay, Benefits, and Skill
-                  Development
-                </li>
-              </ul>
-              <div class="">
-                <a
-                  href="#"
-                  class="bg-[#DDFE52] text-[#135243] px-6 py-3 rounded-xl shadow-md border-none hover:bg-lime-400 hover:text-white transition duration-300 ease-in-out font-medium text-base"
-                >
-                  Learn More →
-                </a>
-              </div>
-            </div>
-
-            <!-- Right side (image) -->
-            <div class="w-full lg:w-1/2">
-              <img
-                src="images/two-people-using-laptop-meeting-coffee-shop 1.png"
-                class="w-full h-full object-cover clip-image"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="py-12 bg-[#1352430D]">
-        <div class="container mx-auto px-6">
-          <!-- Section Title -->
-          <div class="text-center mb-16">
-            <h2
-              class="text-3xl md:text-4xl lg:text-5xl font-bold text-[#333333] leading-tight"
-            >
-              Find the best experts
-            </h2>
-            <p
-              class="text-black max-w-2xl text-base md:text-xl font-normal mt-5 mx-auto leading-relaxed"
-            >
-              Simplify your hiring process with just four easy steps. Find,
-              connect, and hire the right experts.
-            </p>
-          </div>
-
-          <!-- Three Cards -->
-          <div
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 text-[#333333]"
-          >
-            <!-- Card 1 -->
-            <div
-              class="bg-white rounded-[20px] shadow-lg p-8 w-full text-center relative"
-            >
-              <div
-                class="flex justify-center absolute -top-10 left-1/2 transform -translate-x-1/2"
-              >
-                <div
-                  class="w-24 h-24 bg-[#135243] rounded-full flex items-center justify-center shadow-md"
-                >
-                  <img src="images/lock.svg" alt="" />
-                </div>
-              </div>
-              <div class="flex flex-col gap-2 mt-8 md:mt-12">
-                <h3 class="text-xl md:text-2xl font-bold text-[#333333]">
-                  Unlock Inhuren’s Premier Candidate Network
-                </h3>
-                <p
-                  class="text-sm md:text-lg font-medium text-[#666666] leading-relaxed"
-                >
-                  Access a vast pool of in-demand candidates for both contract
-                  and permanent positions.
-                </p>
-              </div>
-            </div>
-
-            <!-- Card 2 -->
-            <div
-              class="bg-white rounded-[20px] shadow-lg p-8 w-full text-center relative"
-            >
-              <div
-                class="flex justify-center absolute -top-10 left-1/2 transform -translate-x-1/2"
-              >
-                <div
-                  class="w-24 h-24 bg-[#135243] rounded-full flex items-center justify-center shadow-md"
-                >
-                  <img src="images/Matching.svg" alt="" />
-                </div>
-              </div>
-              <div class="flex flex-col gap-2 mt-8 md:mt-12">
-                <h3 class="text-xl md:text-2xl font-bold text-[#333333]">
-                  Effortless Matching to Industry-Ready Professionals
-                </h3>
-                <p
-                  class="text-sm md:text-lg font-medium text-[#666666] leading-relaxed"
-                >
-                  Swiftly connect with skilled individuals possessing the right
-                  skills and industry experience.
-                </p>
-              </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div
-              class="bg-white rounded-[20px] shadow-lg p-8 w-full text-center relative"
-            >
-              <div
-                class="flex justify-center absolute -top-10 left-1/2 transform -translate-x-1/2"
-              >
-                <div
-                  class="w-24 h-24 bg-[#135243] rounded-full flex items-center justify-center shadow-md"
-                >
-                  <img src="images/lock.svg" alt="" />
-                </div>
-              </div>
-              <div class="flex flex-col gap-2 mt-8 md:mt-12">
-                <h3 class="text-xl md:text-2xl font-bold text-[#333333]">
-                  Tailored Recruitment <br />Across All Levels
-                </h3>
-                <p
-                  class="text-sm md:text-lg font-medium text-[#666666] leading-relaxed"
-                >
-                  Let Inhuren handle the recruitment of qualified candidates,
-                  ranging from office support to C-suite positions.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="relative text-white text-center py-12">
-        <!-- Curved Shape -->
-        <div
-          class="absolute bottom-0 left-0 w-full h-full bg-[#135243]"
-          style="clip-path: ellipse(60% 98% at center bottom)"
-        ></div>
-
-        <!-- Content -->
-        <div
-          class="relative z-10 mx-auto p-8 md:p-12 lg:p-16 xl:p-20 flex flex-col justify-center items-center gap-4 md:gap-8 lg:gap-12"
-        >
-          <div class="flex flex-col gap-2 md:gap-4">
-            <h2 class="text-xl md:text-3xl lg:text-5xl font-bold ">
-              Inhuren.nl makes it easy to get assignments done
-            </h2>
-            <p class="text-sm md:text-xl lg:text-2xl font-medium text-gray-200">
-              Connect with top experts or find the right opportunities, all in
-              one place.
-            </p>
-          </div>
-          <!-- Button -->
-          <div class="">
-            <a
-              href="#"
-              class="bg-[#DDFE52] text-[#333333] px-4 md:px-6 py-2 md:py-4 rounded-xl shadow-md border-none hover:bg-lime-400 hover:text-white transition duration-300 ease-in-out font-medium text-base"
-            >
-              Start Hiring →
-            </a>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="bg-[#EFF0E480] text-gray-800">
-      <div class="container mx-auto px-5 py-12">
-        <div class="flex flex-col md:flex-row gap-10">
-          <!-- Left Section -->
-          <div class="w-1/2 flex flex-col items-start jusstify-start">
-            <a href="#" class="">
-              <img
-                src="images/Logo +Actions.png"
-                alt="Logo"
-                class="w-full h-full object-none"
-              />
-            </a>
-            <p class="mt-2 text-sm font-normal text-gray-600">
-              Find and hire the best experts for your assignments.
-            </p>
-            <div class="mt-4 space-y-2 text-sm font-normal">
-              <p class="flex items-center space-x-2">
-                <img src="images/Email.png" alt="" />
-                <a href="mailto:recruitment@inhuren.nl" class="hover:underline"
-                  >recruitment@inhuren.nl</a
-                >
-              </p>
-              <p class="flex items-center space-x-2">
-                <img src="images/Phone.png" alt="" />
-                <a href="tel:+1234567890" class="hover:underline"
-                  >+12 3456 7890</a
-                >
-              </p>
-            </div>
-          </div>
-
-          <div class="w-1/2 flex flex-col md:flex-row gap-10">
-            <!-- Links Section -->
-            <div>
-              <h3 class="font-bold text-base mb-2">Platform</h3>
-              <ul class="space-y-1 text-sm font-normal text-gray-600">
-                <li>
-                  <a href="#" class="hover:underline"
-                    >Inhuren for Freelancers</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="hover:underline">Inhuren for Employers</a>
-                </li>
-                <li><a href="#" class="hover:underline">Find Job</a></li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 class="font-bold text-base mb-2">Why Inhuren</h3>
-              <ul class="space-y-1 text-sm font-normal text-gray-600">
-                <li><a href="#" class="hover:underline">About Us</a></li>
-                <li><a href="#" class="hover:underline">Blog</a></li>
-                <li><a href="#" class="hover:underline">Contact Us</a></li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 class="font-bold text-base mb-2">Legal</h3>
-              <ul class="space-y-1 text-sm font-normal text-gray-600">
-                <li>
-                  <a href="#" class="hover:underline">Terms & Conditions</a>
-                </li>
-                <li><a href="#" class="hover:underline">Privacy Policy</a></li>
-                <li><a href="#" class="hover:underline">Cookie Policy</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <!-- Divider -->
-        <div
-          class="border-t border-gray-300 mt-8 pt-4 text-center text-sm font-normal text-gray-600"
-        >
-          © 2024 Inhuren. All Rights Reserved.
         </div>
       </div>
-    </footer>
-  </body>
+    </section>
+
+    <section class="relative mb-12">
+      <img src="images/expart-bg.png" class="h-full full absolute top-0 end-0" />
+      <div class="container mx-auto px-5 py-12">
+        <div class="grid grid-cols-12 items-center gap-5">
+          <!-- Left side (text content) -->
+          <div class="col-span-12 lg:col-span-5 mb-6 md:mb-0 flex flex-col gap-8">
+            <h1 class="text-2xl md:text-4xl lg:text-5xl font-bold text-[#333333]">
+              Start as an expert with Inhuren.nl
+            </h1>
+            <ul class="space-y-4 ">
+              <li class="flex items-start  gap-4 ">
+                <i class="fa-solid fa-circle-check text-[#135243] text-2xl md:text-[32px] mt-1"></i>
+                <span class=" text-lg xl:text-[22px]/8 font-medium text-[#333333]">Discover opportunities aligned with
+                  your skills
+                  and
+                  aspirations</span>
+              </li>
+              <li class="flex items-start  gap-4 ">
+                <i class="fa-solid fa-circle-check text-[#135243] text-2xl md:text-[32px] mt-1"></i>
+                <span class=" text-lg xl:text-[22px]/8 font-medium text-[#333333]">Unlock access to competitive pay,
+                  benefits, and
+                  skill
+                  development</span>
+              </li>
+              <li class="flex items-start  gap-4 ">
+                <i class="fa-solid fa-circle-check text-[#135243] text-2xl md:text-[32px] mt-1"></i>
+                <span class=" text-lg xl:text-[22px]/8 font-medium text-[#333333]">Explore roles across various
+                  companies and work
+                  arrangements</span>
+
+              </li>
+            </ul>
+            <div class="">
+              <a href="#"
+                class="bg-[#DDFE52] text-[#135243] px-6 py-3 rounded-xl shadow-md border-none hover:bg-lime-400 hover:text-white transition duration-300 ease-in-out font-medium text-base">
+                Learn More →
+              </a>
+            </div>
+          </div>
+
+          <!-- Right side (image) -->
+          <div class="col-span-12 lg:col-span-7">
+            <img src="images/expart.png" class="w-full h-full object-cover" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 bg-[#1352430D] mb-16">
+      <div class="container mx-auto px-6">
+        <!-- Section Title -->
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-[#333333] leading-tight">
+            Find the best experts
+          </h2>
+          <p class="text-black max-w-2xl text-base md:text-xl font-normal mt-5 mx-auto leading-relaxed">
+            Simplify your hiring process with just four easy steps. Find,
+            connect, and hire the right experts.
+          </p>
+        </div>
+
+        <!-- Three Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-16 text-[#333333] ">
+          <!-- Card 1 -->
+          <div class="bg-white rounded-[20px] shadow-lg p-8 md:p-12 w-full text-center relative mt-16 md:mt-20">
+            <div class="flex justify-center absolute -top-10 md:-top-16 left-1/2 transform -translate-x-1/2">
+              <div
+                class="h-20 md:h-28 w-20 md:w-28 bg-[#135243] p-4 text-white flex items-center justify-center rounded-full">
+                <img src="images/lock.svg" alt="" class="h-7 md:h-12 w-7 md:w-12" />
+              </div>
+            </div>
+            <div class="flex flex-col gap-2 mt-8 md:mt-12">
+              <h3 class="text-xl md:text-2xl font-bold text-[#333333]">
+                Unlock Inhuren’s Premier Candidate Network
+              </h3>
+              <p class="text-sm md:text-lg font-medium text-[#666666] leading-relaxed">
+                Access a vast pool of in-demand candidates for both contract
+                and permanent positions.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="bg-white rounded-[20px] shadow-lg p-8 md:p-12 w-full text-center relative mt-16 md:mt-20">
+            <div class="flex justify-center absolute -top-10 md:-top-16 left-1/2 transform -translate-x-1/2">
+              <div
+                class="h-20 md:h-28 w-20 md:w-28 bg-[#135243] p-4 text-white flex items-center justify-center rounded-full">
+                <img src="images/Matching.svg" alt="" class="h-7 md:h-12 w-7 md:w-12" />
+              </div>
+            </div>
+            <div class="flex flex-col gap-2 mt-8 md:mt-12">
+              <h3 class="text-xl md:text-2xl font-bold text-[#333333]">
+                Effortless Matching to Industry-Ready Professionals
+              </h3>
+              <p class="text-sm md:text-lg font-medium text-[#666666] leading-relaxed">
+                Swiftly connect with skilled individuals possessing the right
+                skills and industry experience.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="bg-white rounded-[20px] shadow-lg p-8 md:p-12 w-full text-center relative mt-16 md:mt-20">
+            <div class="flex justify-center absolute -top-10 md:-top-16 left-1/2 transform -translate-x-1/2">
+              <div
+                class="h-20 md:h-28 w-20 md:w-28 bg-[#135243] p-4 text-white flex items-center justify-center rounded-full">
+                <img src="images/lock.svg" alt="" class="h-7 md:h-12 w-7 md:w-12" />
+              </div>
+            </div>
+            <div class="flex flex-col gap-2 mt-8 md:mt-12">
+              <h3 class="text-xl md:text-2xl font-bold text-[#333333]">
+                Tailored Recruitment <br />Across All Levels
+              </h3>
+              <p class="text-sm md:text-lg font-medium text-[#666666] leading-relaxed">
+                Let Inhuren handle the recruitment of qualified candidates,
+                ranging from office support to C-suite positions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="relative text-white text-center py-12">
+      <!-- Curved Shape -->
+      <div class="absolute bottom-0 left-0 w-full h-full bg-[#135243]"
+        style="clip-path: ellipse(60% 98% at center bottom)"></div>
+
+      <!-- Content -->
+      <div
+        class="relative z-10 mx-auto p-8 md:p-12 lg:p-16 xl:p-20 flex flex-col justify-center items-center gap-4 md:gap-8 lg:gap-12 pt-12">
+        <div class="flex flex-col gap-2 md:gap-4">
+          <h2 class="text-xl md:text-3xl lg:text-5xl font-bold ">
+            Inhuren.nl makes it easy to get assignments done
+          </h2>
+          <p class="text-sm md:text-xl lg:text-2xl font-medium text-gray-200">
+            Connect with top experts or find the right opportunities, all in
+            one place.
+          </p>
+        </div>
+        <!-- Button -->
+        <div class="">
+          <a href="#"
+            class="bg-[#DDFE52] text-[#333333] px-4 md:px-6 py-2 md:py-4 rounded-xl shadow-md border-none hover:bg-lime-400 hover:text-white transition duration-300 ease-in-out font-medium text-base">
+            Start Hiring →
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-[#EFF0E480] text-gray-800">
+    <div class="container mx-auto px-5 py-12">
+      <div class="flex flex-col md:flex-row gap-10">
+        <!-- Left Section -->
+        <div class="w-1/2 flex flex-col items-start jusstify-start">
+          <div class="h-8 w-[125px] flex-none">
+            <a href="#">
+              <img src="images/Logo +Actions.png" alt="Logo" class="w-full h-full" />
+            </a>
+          </div>
+          <p class="mt-2 text-sm font-normal text-[#333333] font-medium">
+            Find and hire the best experts for your assignments.
+          </p>
+          <div class="mt-4 space-y-2 text-sm font-normal">
+            <p class="flex items-center space-x-2">
+              <img src="images/Email.png" alt="" />
+              <a href="mailto:recruitment@inhuren.nl" class="hover:underline">recruitment@inhuren.nl</a>
+            </p>
+            <p class="flex items-center space-x-2">
+              <img src="images/Phone.png" alt="" />
+              <a href="tel:+1234567890" class="hover:underline">+12 3456 7890</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="w-1/2 flex flex-col md:flex-row gap-10">
+          <!-- Links Section -->
+          <div class="space-y-4">
+            <h3 class="font-bold text-base mb-2">Platform</h3>
+            <ul class="space-y-3 text-sm font-normal text-[#333333]">
+              <li>
+                <a href="#" class="hover:underline">Inhuren for Freelancers</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline">Inhuren for Employers</a>
+              </li>
+              <li><a href="#" class="hover:underline">Find Job</a></li>
+            </ul>
+          </div>
+
+          <div class="space-y-4">
+            <h3 class="font-bold text-base mb-2">Why Inhuren</h3>
+            <ul class="space-y-3 text-sm font-normal text-[#333333]">
+              <li><a href="#" class="hover:underline">About Us</a></li>
+              <li><a href="#" class="hover:underline">Blog</a></li>
+              <li><a href="#" class="hover:underline">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="space-y-4">
+            <h3 class="font-bold text-base mb-2">Legal</h3>
+            <ul class="space-y-3 text-sm font-normal text-[#333333]">
+              <li>
+                <a href="#" class="hover:underline">Terms & Conditions</a>
+              </li>
+              <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+              <li><a href="#" class="hover:underline">Cookie Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="border-t border-gray-300 mt-8 pt-4 text-center text-sm font-normal text-[#333333] font-medium">
+        © 2024 Inhuren. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+  <script src="Assets/js/main.js"></script>
+</body>
+
 </html>
